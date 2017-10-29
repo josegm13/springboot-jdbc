@@ -25,7 +25,7 @@ public class ProgramaDAOTests {
             System.out.println("Id: "+programa.getId());
             System.out.println("Nombre: "+programa.getNombre());
             System.out.println("codigo: "+programa.getCodigo());
-            System.out.println(programa.getDescripcion());
+            System.out.println("Descripcion: "+programa.getDescripcion());
         }
         Assert.assertTrue(programas.size() > 0);
     }
@@ -62,7 +62,7 @@ public class ProgramaDAOTests {
         Assert.assertTrue(programaDAO.get(1l).getCodigo().equals("999"));
     }
 
-    /*@Test
+    @Test
     public void verifyDelete() {
 
         Programa programa = new Programa();
@@ -70,6 +70,6 @@ public class ProgramaDAOTests {
         programaDAO.delete(programa);
 
         Assert.assertTrue(programaDAO.get(3l) == null);
-    }*/
+    }
 
 }
